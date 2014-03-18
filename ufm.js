@@ -57,8 +57,9 @@ main.append('<li class="file"><a target="_blank" href="'+base+'/'+path+name+'"><
 
 (function($) {
 
-//make search values without case sensative
 $.fn.load_ufm = function(b) {
+	
+//make search values without case sensative
 jQuery.expr[':'].Contains = function(a,i,m){ return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0; };
 
 
